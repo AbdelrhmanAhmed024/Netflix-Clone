@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="src/style.css" />
+    <link rel="icon" href="assets/netflixIcon.png">
+    <title>Netflix</title>
+
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="home.html"><img src="assets/netflix-logo.png" alt="Netflix logo" width="200px" /></a>
+            <div class="nav-btn-wrapper">
+                <img src="assets/internet.png" alt="internet" />
+                <button id="btn-language">English</button>
+                <i class="bx bxs-down-arrow" style="left: 114px;"></i>
+                <select name="language" id="language" onchange="location = this.value;">
+                    <option value="../home.html">English</option>
+                    <option value="src/tl.html">العربية</option>
+                </select>
+                <a href="SignIn.php"><button class="signin-btn" style="font-weight: 700;">Sign In</button></a>
+            </div>
+        </nav>
+        <article class="header-content">
+            <h1>Unlimited Movies, TV<br />
+                Shows and More.</h1>
+            <h2>Start now for free.</h2>
+            <p> Ready to watch? Enter your email to create an account.</p>
+
+
+                
+            <form action="SignUp.php" method="get" >
+                <div class="user-input">
+                    <input autocomplete="email" type="text" name="user-email" class="user-email" id="input-email1"
+                        required />
+                   
+                        <label for="input-email1" class="email-label">Email Address</label>
+                    <button class="started-btn" type="submit" style="font-size: 23px; font-weight: 550; " >Get Started&nbsp; <i
+                            class="fal fa-chevron-right"></i></button>
+                            
+                </div>
+            </form>
+        </article>
+    </header>
+    <div class="line"></div>
+    <section class="netflix-showcase">
+        <article class="section-content">
+            <h1>Enjoy on your TV.</h1>
+            <h2 id="first-section-description"> Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV,
+                Blu-ray players and more.</h2>
+        </article>
+        <aside class="first-animation-wrapper">
+            <img src="assets/tv.png" alt="TV image" />
+            <video src="assets/video-1.m4v" type="video/mp4" autoplay loop muted></video>
+        </aside>
+    </section>
+    <div class="line"></div>
+    <section class="netflix-showcase reverse">
+        <aside class="second-animation-wrapper">
+            <img class="background-img" src="assets/mobile-0819.jpg" alt="cell phone image" />
+            <div class="stranger-things-card">
+                <div class="stranger-things-inner-card">
+                    <img class="banner-img" src="assets/boxshot.png" alt="stranger things card" />
+                    <div class="stranger-things-txt">
+                        <p>Stranger Things</p>
+                        <p>Downloading...</p>
+                    </div>
+                </div>
+                <img class="download-img" src="assets/download-icon.gif" alt="" />
+            </div>
+        </aside>
+        <article class="section-content" id="stranger-things-content">
+            <h1>Download your shows to watch offline.</h1>
+            <h2>Save your favorites easily and always have something to watch.</h2>
+        </article>
+    </section>
+    <div class="line"></div>
+    <section class="netflix-showcase">
+        <article class="section-content">
+            <h1>Watch everywhere.</h1>
+            <h2>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV without paying more.</h2>
+        </article>
+        <aside class="third-animation-wrapper">
+            <div class="third-inner-animation-wrapper">
+                <img src="assets/device-pile.png" alt="netflix device pile" />
+                <video src="assets/video-devices.m4v" type="video/mp4" autoplay loop muted></video>
+            </div>
+        </aside>
+    </section>
+    <div class="line"></div>
+    <section class="netflix-showcase reverse">
+        <aside class="fourth-animation-wrapper">
+            <img src="assets/AAAABdFTpLmANuJpYneLq8L5m7CunMCi8e8Nl4y7xaPVWzG3IeoDoq17egTQAthApKg_4sdRWdwuR8KadWu1frjL3JQImpwq.png"
+                alt="netflix kids image" />
+        </aside>
+        <article class="section-content" id="kids-content">
+            <h1>Create profiles for kids.</h1>
+            <h2 id="fourth-section-description">Send kids on adventures with their favorite characters in a space made
+                just for them—free with your membership.</h2>
+        </article>
+    </section>
+    <div class="line"></div>
+    <section class="questions">
+        <h1>Frequently Asked Questions</h1>
+        <ul id="faq-list">
+            <li>
+                <button class="question">What is Netflix?</button>
+                <p class="answer-paragraph">Netflix is a streaming service that offers a wide variety of award-winning
+                    TV shows, movies, anime, documentaries, and more on thousands of internet-connected
+                    devices.<br /><br />You can watch as much as you want, whenever you want without a single commercial
+                    – all for one low monthly price. There's always something new to discover and new TV shows and
+                    movies are added every week!</p>
+            </li>
+            <li>
+                <button class="question">How much does netflix cost?</button>
+                <p class="answer-paragraph">Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming
+                    device, all for one fixed monthly fee. Plans range from EGP70 to EGP165 a month. No extra costs, no
+                    contracts.</p>
+            </li>
+            <li>
+                <button class="question">Where can i watch?</button>
+                <p class="answer-paragraph">Watch anywhere, anytime. Sign in with your Netflix account to watch
+                    instantly on the web at netflix.com from your personal computer or on any internet-connected device
+                    that offers the Netflix app, including smart TVs, smartphones, tablets, streaming media players and
+                    game consoles.<br /><br />You can also download your favorite shows with the iOS, Android, or
+                    Windows 10 app. Use downloads to watch while you're on the go and without an internet connection.
+                    Take Netflix with you anywhere.
+                </p>
+            </li>
+            <li>
+                <button class="question">How do I cancel?</button>
+                <p class="answer-paragraph">Netflix is flexible. There are no pesky contracts and no commitments. You
+                    can easily cancel your account online in two clicks. There are no cancellation fees – start or stop
+                    your account anytime.</p>
+            </li>
+            <li>
+                <button class="question">What can I watch from Netflix?</button>
+                <p class="answer-paragraph">Netflix has an extensive library of feature films, documentaries, TV shows,
+                    anime, award-winning Netflix originals, and more. Watch as much as you want, anytime you want.
+                </p>
+            </li>
+            <li>
+                <button class="question">Is Netflix good for kids?</button>
+                <p class="answer-paragraph">The Netflix Kids experience is included in your membership to give parents
+                    control while kids enjoy family-friendly TV shows and movies in their own space.<br /><br />Kids
+                    profiles come with PIN-protected parental controls that let you restrict the maturity rating of
+                    content kids can watch and block specific titles you don’t want kids to see.</p>
+            </li>
+        </ul>
+        <p id="email-paragraph">Ready to watch? Enter your email to create or restart your membership.</p>
+        <form action="SignUp.php" method="get" >
+            <div class="user-input">
+                <input autocomplete="email" type="text" name="user-email" class="user-email" id="input-email1"
+                    required />
+               
+                    <label for="input-email1" class="email-label">Email Address</label>
+                <button class="started-btn" type="submit" style="font-size: 23px; font-weight: 550; " >Get Started&nbsp; <i
+                        class="fal fa-chevron-right"></i></button>
+                        
+            </div>
+    </section>
+    <div class="line"></div>
+    <footer>
+        <div class="footer-wrapper">
+            <p class="tel-paragraph"><a href="https://help.netflix.com/en/contactus">Questions? Contact us.</a></p>
+            <ul class="footer-links">
+                <li>
+                    <a href="https://help.netflix.com/en/node/412">FAQ</a>
+                </li>
+                <li>
+                    <a href="https://help.netflix.com/">Help Center</a>
+                </li>
+                <li>
+                    <a href="https://www.netflix.com/youraccount">Account</a>
+                </li>
+                <li>
+                    <a href="https://media.netflix.com/">Media Center</a>
+                </li>
+                <li>
+                    <a href="http://ir.netflix.com/">Investor Relations</a>
+                </li>
+                <li>
+                    <a href="https://jobs.netflix.com/jobs">Jobs</a>
+                </li>
+                <li>
+                    <a href="https://www.netflix.com/redeem">Redeem Gift Cards</a>
+                </li>
+                <li>
+                    <a href="https://www.netflix.com/gift-cards">Buy Gift Cards</a>
+                </li>
+                <li>
+                    <a href="https://www.netflix.com/watch">Ways to Watch</a>
+                </li>
+                <li>
+                    <a href="https://help.netflix.com/legal/termsofuse">Privacy</a>
+                </li>
+                <li>
+                    <a href="https://help.netflix.com/legal/termsofuse">Terms of Use</a>
+                </li>
+                <li>
+                    <a href="https://help.netflix.com/legal/privacy">Cookie Preferences</a>
+                </li>
+                <li>
+                    <a href="https://www.netflix.com/br-en/#">Corporate Information</a>
+                </li>
+                <li>
+                    <a href="https://help.netflix.com/legal/corpinfo">Contact Us</a>
+                </li>
+                <li>
+                    <a href="https://help.netflix.com/contactus">Speed Test</a>
+                </li>
+                <li>
+                    <a href="https://help.netflix.com/legal/notices">Legal Notices</a>
+                </li>
+                <li>
+                    <a href="https://www.netflix.com/br-en/browse/genre/839338">Only on Netflix</a>
+                </li>
+            </ul>
+            <div class="footer-btn-wrapper">
+                <img src="assets/internet.png" alt="internet" />
+                <select name="language" id="languageDown" onchange="location = this.value;">
+                    <option value="../home.html">English</option>
+                    <option value="src/tl.html">العربية</option>
+                </select>
+                <i class="bx bxs-down-arrow"></i>
+            </div>
+            <p class="netflix-footer-paragraph">&copy; Netflix SIM</p>
+        </div>
+    </footer>
+    
+</body>
+<script src="src/app.js"></script>
+
+</html>

@@ -1,0 +1,434 @@
+/* || Reset */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* || General styles setup */
+
+:root {
+
+  background-color: white;
+  --red: #e50914;
+  --white: #fff;
+  --gray-white: #b3b3b3;
+  --gray-light: #999;
+  --gray-txt: #8c8c8c;
+  --blue: #0071eb;
+
+}
+
+html {
+  min-height: 100%;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+body {
+  min-height: 100%;
+  color: var(--gray-txt);
+}
+
+/* || Header styles */
+.site-header {
+  max-width: 100%;
+  height: 60px;
+}
+
+.svg-netflix-logo {
+  width: 75px;
+  margin-top: 20px;
+  margin-left: 10px;
+
+  fill: var(--red);
+  cursor: pointer;
+}
+
+/* || Card styles */
+.main-container {
+  margin: 5px 0 125px;
+}
+
+.signup-card {
+  width: 100%;
+  max-width: 660px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.card__title {
+  margin-bottom: 30px;
+
+  font-size: 2rem;
+  color: var(--white);
+}
+
+/* || Login styles */
+.login-container {
+  max-width: 100%;
+  height: 50px;
+  border: gray 1px solid;
+
+  position: relative;
+
+  background-color: var(--gray-bg);
+  border-radius: 5px;
+}
+
+.login-container:first-of-type {
+  margin-bottom: 15px;
+}
+
+.login-container__label {
+  padding-left: 20px;
+
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+
+  font-size: 0.9rem;
+  transition: 0.2s ease;
+}
+
+.login-container__label--onFocus {
+  font-size: 0.7rem;
+  top: 25%;
+}
+
+.login-container__input {
+  width: 100%;
+  height: 100%;
+  padding: 15px 15px 0 20px;
+
+  background-color: transparent;
+  color: var(--white);
+  font-size: 1rem;
+
+  outline: none;
+}
+
+.login-container__input:focus {
+  filter: brightness(1.3);
+}
+
+.submit-button {
+  width: 100%;
+  height: 50px;
+
+  margin-top: 40px;
+
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: var(--red);
+  color: var(--white);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.save-login {
+  width: 100%;
+  margin-top: 15px;
+  word-wrap: break-word;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  font-size: 0.8rem;
+  color: var(--gray-white);
+}
+
+.save-login__container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#FP {
+  color: rgb(0, 42, 255);
+
+}
+
+
+.checkbox-container__box {
+  font-size: 1.15rem;
+  color: var(--gray-medium);
+  background-color: var(--gray-medium);
+  border-radius: 3px;
+}
+
+.checkbox-container__check {
+  width: 18px;
+  height: 18px;
+
+  position: absolute;
+  top: 0;
+  left: 1px;
+
+  font-size: 1rem;
+  line-height: 1.15rem;
+  font-weight: bold;
+  background-color: transparent;
+  color: var(--black);
+}
+
+.checkbox-container__check--hidden {
+  visibility: hidden;
+  display: none;
+}
+
+.facebook {
+  width: 100%;
+  margin-top: 30px;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+
+  cursor: pointer;
+}
+
+.facebook-icon {
+  width: 22px;
+  height: 22px;
+
+  background-color: var(--white);
+}
+
+.facebook__text {
+  font-size: 0.8rem;
+  color: var(--gray-txt);
+}
+
+.sign-now__text {
+  width: 100%;
+  word-wrap: break-word;
+  margin-top: 30px;
+
+  color: var(--gray-medium);
+}
+
+.sign-now__link {
+  color: var(--white);
+}
+
+.recaptcha-notification__text {
+  width: 100%;
+  margin-top: 15px;
+
+  font-size: 0.8rem;
+}
+
+.recaptcha-notification__link {
+  color: var(--blue);
+}
+
+/* || Footer styles */
+.site-footer {
+  max-width: 100%;
+  padding: 30px 15px 50px;
+  border-top: 1px solid var(--gray-medium);
+}
+
+.site-footer__header {
+  color: var(--gray-medium);
+}
+
+.footer-nav {
+  width: 100%;
+  margin-top: 30px;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, auto));
+  gap: 15px;
+
+  font-size: 0.8rem;
+  color: var(--gray-medium);
+}
+
+.footer-nav__item {
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.footer-nav__item:hover {
+  text-decoration: underline;
+}
+
+.lang {
+  width: fit-content;
+  margin-top: 35px;
+
+  position: relative;
+}
+
+.signin-btn {
+  position: static;
+  margin-left: 90%;
+  padding: 7px 17px;
+  background: transparent;
+  font-size: 16px;
+  border-radius: 4px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+
+.lang__icon {
+  color: rgba(0, 0, 0, 0.837);
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+
+  font-size: 1.3rem;
+}
+
+.lang__switcher {
+  padding: 15px 5px 15px 45px;
+  font-size: 0.8rem;
+  color: black;
+  background-color: white;
+  border: 1px solid var(--gray-bg);
+  text-align: center;
+}
+
+/* || Responsive styles */
+@media screen and (min-width: 450px) {
+  body {
+    background-color: white;
+  }
+
+  .site-header {
+    height: 75px;
+  }
+
+  .svg-netflix-logo {
+    width: 150px;
+  }
+
+  .main-container {
+    margin-bottom: 110px;
+  }
+
+  .footer-nav {
+    display: flex;
+    gap: 10%;
+    flex-wrap: wrap;
+  }
+
+  .footer-nav__item:not(.footer-nav__item:last-of-type) {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 740px) {
+
+
+  .site-header {
+    height: 90px;
+  }
+
+  .svg-netflix-logo {
+    width: 170px;
+    margin-top: 20px;
+    margin-left: 25px;
+  }
+
+  .main-container {
+    margin-bottom: 70px;
+  }
+
+  .signup-card {
+    width: 455px;
+    padding: 60px 70px 150px;
+
+    background-color: var(--transparent);
+  }
+
+  .login-container__label {
+    font-size: 1rem;
+  }
+
+  .login-container__label--onFocus {
+    font-size: 0.7rem;
+    top: 25%;
+  }
+
+  .login-container__input {
+    font-size: 1rem;
+    color: black;
+    
+  }
+
+  .facebook {
+    margin-top: 50px;
+  }
+
+  .sign-now__text {
+    margin-top: 15px;
+  }
+
+  .site-footer {
+    max-width: 100%;
+    margin: 0 auto;
+    border-top: none;
+    padding-left: 30px;
+
+    background-color: #f3f3f3;
+  }
+
+  .site-footer-wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .svg-netflix-logo {
+    margin-left: 40px;
+  }
+
+  .site-footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media screen and (min-height: 1080px) {
+  html {
+    position: relative;
+  }
+
+  .site-footer {
+    width: 100%;
+
+    position: absolute;
+    bottom: 0;
+  }
+}

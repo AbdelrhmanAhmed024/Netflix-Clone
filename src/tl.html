@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="../assets/netflixIcon.png">
+    <title>Netflix SIM</title>
+</head>
+
+<body>
+    <header>
+        <nav dir="rtl">
+            <a href="tl.html"><img src="../assets/netflix-logo.png" alt="Netflix logo" width="200px" /></a>
+            <div class="nav-btn-wrapper">
+                <img src="../assets/internet.png" alt="internet" style="left: 220px;" />
+                <button id="btn-language" style="text-align: start;">العربية</button>
+                <i class="bx bxs-down-arrow" style="left: 119px;"></i>
+                <select name="language" id="language" onchange="location = this.value;"
+                    style="width: 48%; left: 112px;">
+                    <option value="tl.html">العربية</option>
+                    <option value="../home.html">English</option>
+                </select>
+                <a href="SignIn.php"><button class="signin-btn" style="font-weight: 700;">تسجيل الدخول</button></a>
+            </div>
+        </nav>
+        <article class="header-content">
+            <h1>عدد لا حصر له من الأفلام والعروض التلفزيونية، وغيرها</h1>
+            <h2>تبدأ أسعار الخطط الآن من 70 ج.م. شهريًا.</h2>
+            <p>هل أنت جاهزٌ للمشاهدة؟ أدخل بريدك الإلكتروني لإنشاء عضويتك أو إعادة تشغيلها</p>
+            <form action="../SignUp.php" method="get">
+            <div class="user-input" dir="rtl">
+                <input autocomplete="email" type="text" name="user-email" class="user-email" id="input-email1"
+                    required />
+                <label for="input-email1" class="email-label" style="margin-left: 74%;">عنوان البريد الإلكترونى</label>
+                <button class="started-btn" style="font-size: 23px; font-weight: 550;">ابدأ &nbsp; <i
+                        class="fal fa-chevron-left"></i></button>
+            </div>
+        </form>
+        </article>
+    </header>
+    <div class="line"></div>
+    <section class="netflix-showcase" dir="rtl">
+        <article class="section-content">
+            <h1>استمتع بالمشاهدة على تلفزيونك</h1>
+            <h2 id="first-section-description">شاهد على أجهزة التلفزيون الذكية و PlayStation و Xbox و Chromecast و Apple
+                TV ومشغلات Blu-ray والمزيد</h2>
+        </article>
+        <aside class="first-animation-wrapper">
+            <img src="../assets/tv.png" alt="TV image" />
+            <video src="../assets/video-1.m4v" type="video/mp4" autoplay loop muted></video>
+        </aside>
+    </section>
+    <div class="line"></div>
+    <section class="netflix-showcase reverse" dir="rtl">
+        <aside class="second-animation-wrapper">
+            <img class="background-img" src="../assets/mobile-0819.jpg" alt="cell phone image" />
+            <div class="stranger-things-card">
+                <div class="stranger-things-inner-card">
+                    <img class="banner-img" src="../assets/boxshot.png" alt="stranger things card" />
+                    <div class="stranger-things-txt">
+                        <p>Stranger Things</p>
+                        <p>جارى التنزيل...</p>
+                    </div>
+                </div>
+                <img class="download-img" src="../assets/download-icon.gif" alt="" />
+            </div>
+        </aside>
+        <article class="section-content" id="stranger-things-content" style="margin-right: 200px;">
+            <h1>يمكنك تنزيل عروضك المفضلة للاستمتاع بمشاهدتها دون اتصال</h1>
+            <h2>احفظ أعمالك المفضلة بسهولة لتتمكن دائمًا من مشاهدة ما تريد</h2>
+        </article>
+    </section>
+    <div class="line"></div>
+    <section class="netflix-showcase" dir="rtl">
+        <article class="section-content">
+            <h1>شاهد في أي مكان</h1>
+            <h2>شاهد أفلامًا وعروضًا تلفزيونية لا حصر لها على هاتفك أو جهازك اللوحي أو حاسوبك المحمول أو حتى على
+                تلفزيونك دون أن تدفع المزيد</h2>
+        </article>
+        <aside class="third-animation-wrapper">
+            <div class="third-inner-animation-wrapper">
+                <img src="../assets/device-pile.png" alt="netflix device pile" />
+                <video src="../assets/video-devices.m4v" type="video/mp4" autoplay loop muted></video>
+            </div>
+        </aside>
+    </section>
+    <div class="line"></div>
+    <section class="netflix-showcase reverse">
+        <aside class="fourth-animation-wrapper">
+            <img src="../assets/AAAABdFTpLmANuJpYneLq8L5m7CunMCi8e8Nl4y7xaPVWzG3IeoDoq17egTQAthApKg_4sdRWdwuR8KadWu1frjL3JQImpwq.png"
+                alt="netflix kids image" />
+        </aside>
+        <article class="section-content" id="kids-content">
+            <h1>إنشاء ملفات شخصية للأطفال</h1>
+            <h2 id="fourth-section-description">أطلق العنان لأطفالك لخوض مغامرات مثيرة مع شخصياتهم المحبوبة في تجربة
+                مُخصصة لهم - ومجانًا ضمن عضويتك</h2>
+        </article>
+    </section>
+    <div class="line"></div>
+    <section class="questions">
+        <h1>الأسئلة الشائعة</h1>
+        <ul id="faq-list" dir="rtl" ">
+                <li>
+                    <button class=" question" style="text-align: right; padding-right: 2%;">ما هى خدمة
+            Netflix؟</button>
+            <p class="answer-paragraph" style="text-align: right; padding-right: 2%;">Netflix هي خدمة بث تقدّم مجموعة
+                متنوعة من العروض التلفزيونية والأفلام وأعمال الأنيمي الوثائقيات وغيرها من الأعمال الحائزة على جوائز من
+                خلال الآلاف من الأجهزة المتصلة بالإنترنت.<br /><br />ويمكنك مشاهدة كل ما تريد وقتما تشاء، بدون إعلانات
+                تجارية - وكل ذلك مقابل سعر شهري منخفض. ستجد دومًا شيئًا جديدًا لتكتشفه، حيث يتم إضافة عروض تلفزيونية
+                وأفلام جديدة كل أسبوع!</p>
+            </li>
+            <li>
+                <button class="question" style="text-align: right; padding-right: 2%;">كم تبلغ تكلفة Netflix؟</button>
+                <p class="answer-paragraph" style="text-align: right; padding-right: 2%;">شاهد Netflix على هاتفك الذكي
+                    أو الكمبيوتر اللوحي أو التلفزيون الذكي أو الكمبيوتر المحمول أو جهاز البث، وكل ذلك مقابل رسم شهري
+                    ثابت. تتراوح أسعار الخطط بين 70 ج.م. و 165 ج.م.في الشهر. بدون تكلفة إضافية، وبدون عقود.</p>
+            </li>
+            <li>
+                <button class="question" style="text-align: right; padding-right: 2%;">أين يمكنني أن أشاهد؟</button>
+                <p class="answer-paragraph" style="text-align: right; padding-right: 2%;">ويمكنك مشاهدة كل ما تريد وقتما
+                    تشاء، بدون إعلانات تجارية - وكل ذلك مقابل سعر شهري منخفض. ستجد دومًا شيئًا جديدًا لتكتشفه، حيث يتم
+                    إضافة عروض تلفزيونية وأفلام جديدة كل أسبوع!</p>
+            </li>
+            <li>
+                <button class="question" style="text-align: right; padding-right: 2%;">كيف أقوم بالإلغاء؟</button>
+                <p class="answer-paragraph" style="text-align: right; padding-right: 2%;">تتسم خدمة Netflix بالمرونة.
+                    بلا عقود مزعجة وبلا التزامات. يمكنك إلغاء حسابك بكل سهولة عبر الإنترنت بنقرتين. لا رسوم للإلغاء، قم
+                    ببدء حسابك أو إيقافه في أي وقت.</p>
+            </li>
+            <li>
+                <button class="question" style="text-align: right; padding-right: 2%;">ما الذي يمكنني مشاهدته على
+                    Netflix؟</button>
+                <p class="answer-paragraph" style="text-align: right; padding-right: 2%;">يحتوي Netflix على مكتبة واسعة
+                    من الأفلام الروائية والوثائقية والعروض التلفزيونية والأنيمي وأصول Netflix الأصلية الحائزة على جوائز
+                    والمزيد. شاهد ما تريد ، في أي وقت تريد.
+                </p>
+            </li>
+            <li>
+                <button class="question" style="text-align: right; padding-right: 2%;">هل Netflix ملائمة
+                    للأطفال؟</button>
+                <p class="answer-paragraph" style="text-align: right; padding-right: 2%;">تمنح تجربة Netflix للأطفال،
+                    والمُندرجة ضمن عضويتك، الأهل إمكانية التحكم بما يشاهده الأطفال خلال استمتاعهم بمشاهدة العروض
+                    التلفزيونية والأفلام الملائمة لجميع أفراد العائلة ضمن الملف الشخصي المُخصص لهم.<br /><br />وبفضل
+                    عناصر الرقابة الأبوية المحمية برمز PIN للملفات الشخصية للأطفال، يستطيع الأهل تقييد المحتوى الذي يمكن
+                    للأطفال مشاهدته وفق تصنيف نضج معين، فضلًا عن حظر عناوين محددة لا يرغب الأهل أن يشاهدها الأطفال.</p>
+            </li>
+        </ul>
+        <p id="email-paragraph">هل أنت جاهزٌ للمشاهدة؟ أدخل بريدك الإلكتروني لإنشاء عضويتك أو إعادة تشغيلها.</p>
+        <form action="../SignUp.php" method="get">
+            <div class="user-input" dir="rtl">
+                <input autocomplete="email" type="text" name="user-email" class="user-email" id="input-email1"
+                    required />
+                <label for="input-email1" class="email-label" style="margin-left: 74%;">عنوان البريد الإلكترونى</label>
+                <button class="started-btn" style="font-size: 23px; font-weight: 550;">ابدأ &nbsp; <i
+                        class="fal fa-chevron-left"></i></button>
+            </div>
+        </form>
+    </section>
+    <div class="line"></div>
+    <footer>
+        <div class="footer-wrapper">
+            <p class="tel-paragraph"><a href="https://help.netflix.com/en/contactus">هل لديك أسئلة؟ اتصل بنا</a></p>
+            <ul class="footer-links" dir="rtl">
+                <li>
+                    <a href="https://help.netflix.com/en/node/412">الأسئلة الشائعة</a>
+                </li>
+                <li>
+                    <a href="https://help.netflix.com/">مركز خدمة العملاء</a>
+                </li>
+                <li>
+                    <a href="https://www.netflix.com/youraccount">الحساب</a>
+                </li>
+                <li>
+                    <a href="https://media.netflix.com/">المركز الإعلامي</a>
+                </li>
+                <li>
+                    <a href="http://ir.netflix.com/">علاقات المستثمرين</a>
+                </li>
+                <li>
+                    <a href="https://jobs.netflix.com/jobs">الوظائف</a>
+                </li>
+                <li>
+                    <a href="https://www.netflix.com/redeem">استرداد بطاقات الهدايا</a>
+                </li>
+                <li>
+                    <a href="https://www.netflix.com/gift-cards">شراء بطاقات الهدايا</a>
+                </li>
+                <li>
+                    <a href="https://www.netflix.com/watch">طرق المشاهدة</a>
+                </li>
+                <li>
+                    <a href="https://help.netflix.com/legal/termsofuse">الخصوصية</a>
+                </li>
+                <li>
+                    <a href="https://help.netflix.com/legal/termsofuse">شروط الاستخدام</a>
+                </li>
+                <li>
+                    <a href="https://help.netflix.com/legal/privacy">تفضيلات الكوكيز</a>
+                </li>
+                <li>
+                    <a href="https://www.netflix.com/br-en/#">معلومات الشركة</a>
+                </li>
+                <li>
+                    <a href="https://help.netflix.com/legal/corpinfo">اتصل بنا</a>
+                </li>
+                <li>
+                    <a href="https://help.netflix.com/contactus">اختبار السرعة</a>
+                </li>
+                <li>
+                    <a href="https://help.netflix.com/legal/notices">إشعارات قانونية</a>
+                </li>
+                <li>
+                    <a href="https://www.netflix.com/br-en/browse/genre/839338">حصريًا على Netflix</a>
+                </li>
+            </ul>
+            <div class="footer-btn-wrapper">
+                <img src="../assets/internet.png" alt="internet" />
+                <select name="language" id="languageDown" onchange="location = this.value;">
+                    <option value="tl.html">العربية</option>
+                    <option value="../home.html">English</option>
+                </select>
+                <i class="bx bxs-down-arrow"></i>
+            </div>
+            <p class="netflix-footer-paragraph">Netflix SIM</p>
+        </div>
+    </footer>
+</body>
+<script src="./app.js"></script>
+
+</html>

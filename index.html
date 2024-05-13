@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Netflix</title>
+    <link rel="icon" href="assets/netflixIcon.png">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head><style>
+    #pre-load {
+    min-width: 100%;
+    min-height: 100vh;
+    display: flex;
+    overflow:hidden;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    justify-content: center;
+    align-items: center;
+    background-repeat: none;
+    background-color: white;
+
+}
+</style>
+<script>
+    window.addEventListener('load', () =>{
+    setTimeout(()=>{
+        document.getElementById('pre-load').style.display = 'none';
+        document.getElementById('container').style.display = 'block';
+        window.location.href="home.html";
+    },10600);
+}
+);
+</script>
+<body id="container" style="overflow: hidden;">
+    <div id="pre-load">
+        <img src="img/netflixx.gif" alt="Loading...">
+    </div>
+   
+</body>
+</html>
